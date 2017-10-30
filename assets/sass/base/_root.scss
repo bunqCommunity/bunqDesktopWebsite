@@ -13,4 +13,14 @@ html {
  */
 *, ::before, ::after {
   box-sizing: inherit;
-} 
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-size: cover; /* <------ */
+  background: url(https://static.useresponse.com/public/bunq/my-interface/bunq-colours-bar-2.png) no-repeat center center;
+  height: 50px;
+}
