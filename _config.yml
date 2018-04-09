@@ -11,7 +11,7 @@ title: BunqDesktop
 description: > # this means to ignore newlines until "baseurl:"
   A desktop implementation for Bunq's API. This app does everything within the application so you don't have to worry about sharing your API key with anyone else!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://bunqdesktop.com" # the base hostname & protocol for your site
 
 # Markdown settings
 markdown: kramdown
