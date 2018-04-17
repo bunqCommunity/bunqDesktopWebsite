@@ -1,0 +1,84 @@
+.features {
+  .h3 {
+    margin: 0;
+    font-weight: 200;
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    color: inherit;
+  }
+
+  .screenshot{
+    bottom: 50%;
+    margin-bottom: -244px;
+    width: 780px;
+    height: 488px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: filter 2s;
+    position: absolute;
+
+    @media (max-width: 1100px) {
+      position: relative;
+      left: auto;
+      right: auto;
+      bottom: auto;
+      margin: 0;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.section-dashboard {
+  background-color: #2ac56c;
+  color: white;
+
+  .wrapper {
+    padding-left: 470px;
+  }
+
+  .welcome {
+    display: block;
+
+    .screenshot {
+      right: 50%;
+      margin-right: 40px;
+    }
+  }
+}
+
+.section-payment {
+  background-color: #0e83cd;
+  color: white;
+
+  .wrapper {
+    padding-right: 470px;
+  }
+
+  .welcome {
+    display: block;
+
+    .screenshot {
+      left: 50%;
+      margin-left: 40px;
+    }
+  }
+}
+
+.section-login {
+  background-color: #9e54bd;
+  color: white;
+
+  .wrapper {
+    padding-left: 470px;
+  }
+
+  .welcome {
+    display: block;
+
+    .screenshot {
+      right: 50%;
+      margin-right: 40px;
+    }
+  }
+}
