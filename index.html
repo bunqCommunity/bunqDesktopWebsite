@@ -14,11 +14,15 @@ layout: default
     </div>
 </div>
 
-<div class="features section section-dashboard">
+<section class="features section section-dashboard" id="welcome">
     <div class="wrapper">
         <h3>Desktop version</h3>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor, tortor in venenatis efficitur, risus augue accumsan urna, porta dignissim elit justo ut leo.
+            BunqDesktop is an unofficial, free and opensource desktop application for the bunq api.
+        </p>
+        <p>
+            Our goal is to allow users to manage their bunq account from a desktop device without exposing their API
+            keys to a third party.
         </p>
 
         <div class="welcome">
@@ -28,50 +32,129 @@ layout: default
         </div>
 
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor, tortor in venenatis efficitur, risus augue accumsan urna, porta dignissim elit justo ut leo.
+            All your data stays on your device and is encrypted with your personal password.
         </p>
     </div>
-</div>
+</section>
 
-<div class="features section section-payment">
+<section class="features section section-payment" id="features">
     <div class="wrapper">
-        <h3>Statistics</h3>
+        <h3>Custom features</h3>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor, tortor in venenatis efficitur, risus augue accumsan urna, porta dignissim elit justo ut leo.
+            Along with the functionality supplied by the bunq API we also added some useful custom features. If you'd like us
+            to add something make sure to let us know!
         </p>
 
         <div class="welcome">
             <img class="welcome screenshot"
                  src="{{ "/assets/images/stats-preview.png" | relative_url }}"
-            alt="Dashboard preview screenshot">
+            alt="Stats preview screenshot">
         </div>
 
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor, tortor in venenatis efficitur, risus augue accumsan urna, porta dignissim elit justo ut leo.
-        </p>
+        <h3 class="small-header">Features</h3>
+        <ul>
+            <li><i class="material-icons">insert_chart</i> Statistics page</li>
+            <li><i class="material-icons">bookmark</i> Custom categories</li>
+            <li><i class="material-icons">file_upload</i> Improved exports</li>
+            <li class="no-icon">And more...</li>
+        </ul>
     </div>
-</div>
+</section>
 
-<div class="features section section-login">
+<section class="features section section-login" id="setup">
     <div class="wrapper">
-        <h3>Easy login</h3>
+        <h3>Easy setup</h3>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor, tortor in venenatis efficitur, risus augue accumsan urna, porta dignissim elit justo ut leo.
+            Installation is as simple as running a one-click installer or using one of the other listed options which
+            can be found
+            <a href="https://github.com/BunqCommunity/BunqDesktop#download" rel="noopener" target="_blank">here</a>.
+        </p>
+        <p>
+            To get started with connecting your account simply scan the QR code with the official bunq app.
         </p>
 
         <div class="welcome">
             <img class="welcome screenshot"
                  src="{{ "/assets/images/login-preview.png" | relative_url }}"
-            alt="Dashboard preview screenshot">
+            alt="Login preview screenshot">
         </div>
 
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor, tortor in venenatis efficitur, risus augue accumsan urna, porta dignissim elit justo ut leo.
+            You can also easily add multiple accounts and switch between them within seconds. Or if you'd like to try
+            out the application first you can create instantly create a free test account!
         </p>
     </div>
-</div>
+</section>
 
-<section class="section section-contact">
+<section class="section section-downloads" id="downloads">
+    <div class="wrapper no-padding">
+        <div class="row">
+
+            <div class="col-xs-12 col-md-6">
+                <div class="box">
+                    <h3>Download</h3>
+                    <p>
+                        BunqDesktop is supported on most major platforms including Windows, macOS and a few Linux
+                        distrubutions.
+                    </p>
+                    <p>
+                        There are pre-built installers available for these platforms available on Github.
+                    </p>
+
+                    <p class="fork-button-wrapper">
+                        <a href="https://github.com/BunqCommunity/BunqDesktop/releases/latest"
+                           class="fork-button btn btn-5 btn-5a icon-remove" rel="noopener" target="_blank">
+                            <img src="{{ "/assets/images/github.svg" | relative_url }}" /> <span>View downloads</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <div class="box">
+                    <h3>Package managers</h3>
+                    <table class="welcome-contact-table">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <a href="https://caskroom.github.io/" rel="noopener" target="_blank">
+                                    Brew Cask
+                                </a>
+                            </td>
+                            <td>
+                                <pre><span class="no-text-select">$ </span>brew cask install bunq</pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://chocolatey.org/packages/bunqdesktop" rel="noopener" target="_blank">
+                                    Chocolatey
+                                </a>
+                            </td>
+                            <td>
+                                <pre><span class="no-text-select">$ </span>choco install bunqdesktop</pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://snapcraft.io/bunqdesktop" rel="noopener" target="_blank">
+                                    Snapcraft
+                                </a>
+                            </td>
+                            <td>
+                                <pre><span class="no-text-select">$ </span>sudo snap install bunqdesktop</pre>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section section-contact" id="contact">
     <div class="wrapper no-padding">
         <div class="row">
 
@@ -85,8 +168,8 @@ layout: default
 
                     <p class="fork-button-wrapper">
                         <a href="https://github.com/BunqCommunity/BunqDesktop"
-                           class="fork-button btn btn-5 btn-5a icon-remove">
-                            <span>Fork us!</span>
+                           class="fork-button btn btn-5 btn-5a icon-remove" rel="noopener" target="_blank">
+                            <img src="{{ "/assets/images/github.svg" | relative_url }}" /> <span> Fork us!</span>
                         </a>
                     </p>
                 </div>
