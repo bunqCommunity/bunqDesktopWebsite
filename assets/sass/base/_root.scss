@@ -24,3 +24,64 @@ header {
   background: url(https://static.useresponse.com/public/bunq/my-interface/bunq-colours-bar-2.png) no-repeat center center;
   height: 50px;
 }
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper {
+  padding: 200px 40px;
+  width: 860px;
+  margin: 0 auto;
+  overflow: hidden;
+  .no-padding{
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .wrapper {
+    width: auto;
+    max-width: 660px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .section .wrapper {
+    padding: 100px 50px !important;
+  }
+}
+
+.link-effect {
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  text-shadow: none;
+}
+
+.link-effect {
+  &:before {
+    color: #fff;
+    content: attr(data-hover);
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+}
+
+.link-effect {
+  &:hover,
+  &:focus {
+    &:before {
+      -webkit-transform: scale(0.9);
+      -moz-transform: scale(0.9);
+      transform: scale(0.9);
+      opacity: 0;
+    }
+  }
+}
