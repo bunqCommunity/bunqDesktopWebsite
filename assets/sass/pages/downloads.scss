@@ -49,20 +49,26 @@
     }
   }
 
-  td {
-    padding-right: 2em;
+  tr {
+    td {
+      padding-right: 2em;
 
-    pre {
-      color: #000000;
-      padding: 8px;
-      border-radius: 4px;
-      display: block;
-      background-color: white;
-    }
+      pre {
+        color: #000000;
+        padding: 8px;
+        border-radius: 4px;
+        display: block;
+        background-color: white;
+      }
 
-    a {
-      color: #ffffff;
-      font-weight: 600;
+      a {
+        color: #ffffff;
+        font-weight: 600;
+      }
+
+      @media (max-width: $bigSizeWidth) {
+        display: block;
+      }
     }
   }
 }
