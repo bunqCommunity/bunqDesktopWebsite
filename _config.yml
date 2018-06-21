@@ -7,9 +7,9 @@
 
 # Site settings
 
-title: BunqDesktop
+title: bunqDesktop
 description: > # this means to ignore newlines until "baseurl:"
-  A desktop implementation for Bunq's API. This app does everything within the application so you don't have to worry about sharing your API key with anyone else!
+  A desktop implementation for bunq's API. This app does everything within the application so you don't have to worry about sharing your API key with anyone else!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bunqdesktop.com" # the base hostname & protocol for your site
 
