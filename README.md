@@ -1,2 +1,2 @@
 # bunqDesktop Website
-This repository contains the landing page for bunqDesktop.com
+This repository contains the landing page for bunqdesk.top

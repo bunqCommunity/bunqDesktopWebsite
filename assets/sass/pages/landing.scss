@@ -16,6 +16,22 @@
   img {
     max-width: 100%;
     height: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  div {
+    padding: 40px;
+    width: 100%;
+  }
+
+  @media (max-width: $smallSizeWidth) {
+    div {
+      padding: 8px;
+    }
+  }
+  @media (min-width: $bigSizeWidth) {
+    div {
+      padding: 60px;
+    }
   }
 
   button {
