@@ -2,7 +2,7 @@
  * Set up a decent box model on the root element
  */
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /**
@@ -11,87 +11,90 @@ html {
  * making all elements inheriting from the root box-sizing value
  * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
-*, ::before, ::after {
-  box-sizing: inherit;
+*,
+::before,
+::after {
+    box-sizing: inherit;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 header {
-  background-size: cover;
-  background: url("/assets/images/bunq-colors.svg") no-repeat center center;
-  height: 50px;
+    background-size: cover;
+    background: url("/assets/images/bunq-colors.svg") no-repeat center center;
+    height: 50px;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 h3 {
-  margin: 0;
-  font-size: 24px;
-  letter-spacing: 0.02em;
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 0.02em;
 }
 
 p {
-  font-size: 17px;
+    font-size: 17px;
 }
 
 .section {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    //min-height: 100vh;
 }
 
 .wrapper {
-  padding: 200px 40px;
-  width: 860px;
-  margin: 0 auto;
-  overflow: hidden;
-  .no-padding {
-    padding: 0 40px;
-  }
-}
-
-@media (max-width: $bigSizeWidth) {
-  .wrapper {
-    width: auto;
-    max-width: 660px;
-  }
-}
-
-@media (max-width: $bigSizeWidth) {
-  .section .wrapper {
-    padding: 100px 50px !important;
-  }
-}
-
-.link-effect {
-  color: rgba(0, 0, 0, 0.2);
-  font-weight: 700;
-  text-shadow: none;
-}
-
-.link-effect {
-  &:before {
-    color: #fff;
-    content: attr(data-hover);
-    position: absolute;
-    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
-    transition: transform 0.3s, opacity 0.3s;
-  }
-}
-
-.link-effect {
-  &:hover,
-  &:focus {
-    &:before {
-      -webkit-transform: scale(0.9);
-      -moz-transform: scale(0.9);
-      transform: scale(0.9);
-      opacity: 0;
+    padding: 200px 40px;
+    width: 860px;
+    margin: 0 auto;
+    overflow: hidden;
+    .no-padding {
+        padding: 0 40px;
     }
-  }
+}
+
+@media (max-width: $bigSizeWidth) {
+    .wrapper {
+        width: auto;
+        max-width: 660px;
+    }
+}
+
+@media (max-width: $bigSizeWidth) {
+    .section .wrapper {
+        padding: 100px 50px !important;
+    }
+}
+
+.link-effect {
+    color: rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    text-shadow: none;
+}
+
+.link-effect {
+    &:before {
+        color: #fff;
+        content: attr(data-hover);
+        position: absolute;
+        -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+        -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+        transition: transform 0.3s, opacity 0.3s;
+    }
+}
+
+.link-effect {
+    &:hover,
+    &:focus {
+        &:before {
+            -webkit-transform: scale(0.9);
+            -moz-transform: scale(0.9);
+            transform: scale(0.9);
+            opacity: 0;
+        }
+    }
 }

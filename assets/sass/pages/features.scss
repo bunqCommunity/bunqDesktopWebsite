@@ -1,117 +1,118 @@
 .features {
-  .screenshot {
-    bottom: 50%;
-    margin-bottom: -244px;
-    width: auto;
-    height: 488px;
-    border-radius: 5px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    transition: filter 2s;
-    position: absolute;
+    .screenshot {
+        bottom: 50%;
+        margin-bottom: -244px;
+        width: auto;
+        height: 488px;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        transition: filter 2s;
+        position: absolute;
 
-    @media (max-width: $bigSizeWidth) {
-      position: relative;
-      left: auto;
-      right: auto;
-      bottom: auto;
-      margin: 0;
-      max-width: 100%;
-      height: auto;
+        @media (max-width: $bigSizeWidth) {
+            position: relative;
+            left: auto;
+            right: auto;
+            bottom: auto;
+            margin: 0;
+            max-width: 100%;
+            height: auto;
+        }
     }
-  }
 }
 
 .section-dashboard {
-  background-color: #2ac56c;
-  color: white;
+    color: white;
 
-  .wrapper {
-    padding-left: 470px;
-  }
-
-  .welcome {
-    display: block;
-
-    .screenshot {
-      right: 50%;
-      margin-right: 40px;
-
-      @media (max-width: $bigSizeWidth) {
-        right: 0;
-        margin-right: 0px;
-      }
+    .wrapper {
+        padding-left: 470px;
     }
-  }
+
+    .welcome {
+        display: block;
+
+        .screenshot {
+            right: 50%;
+            margin-right: 40px;
+
+            @media (max-width: $bigSizeWidth) {
+                right: 0;
+                margin-right: 0px;
+            }
+        }
+    }
 }
 
 .section-payment {
-  background-color: #0e83cd;
-  color: white;
+    color: white;
 
-  @media (min-width: $bigSizeWidth) {
     .small-header {
-      display: none;
-    }
-  }
-
-  ul {
-    padding-left: 0px;
-    list-style-type: none;
-
-    li {
-      display: flex;
-      align-items: center;
-      margin: 8px;
-
-      i {
-        margin-right: 6px;
-      }
+        margin-top: 8px;
     }
 
-    .no-icon {
-      padding-left: 32px;
-      margin-top: 2px;
+    @media (min-width: $bigSizeWidth) {
+        .small-header {
+            display: none;
+        }
     }
-  }
 
-  .wrapper {
-    padding-right: 470px;
-  }
+    ul {
+        padding-left: 0px;
+        list-style-type: none;
 
-  .welcome {
-    display: block;
+        li {
+            display: flex;
+            align-items: center;
+            margin: 8px;
 
-    .screenshot {
-      left: 50%;
-      margin-left: 40px;
+            i {
+                margin-right: 6px;
+            }
+        }
 
-      @media (max-width: $bigSizeWidth) {
-        left: 0;
-        margin-left: 0px;
-      }
+        .no-icon {
+            padding-left: 32px;
+            margin-top: 2px;
+        }
     }
-  }
+
+    .wrapper {
+        padding-right: 470px;
+    }
+
+    .welcome {
+        display: block;
+
+        .screenshot {
+            left: 50%;
+            margin-left: 40px;
+
+            @media (max-width: $bigSizeWidth) {
+                left: 0;
+                margin-left: 0px;
+            }
+        }
+    }
 }
 
 .section-login {
-  background-color: #9e54bd;
-  color: white;
+    color: white;
 
-  .wrapper {
-    padding-left: 470px;
-  }
-
-  .welcome {
-    display: block;
-
-    .screenshot {
-      right: 50%;
-      margin-right: 40px;
-
-      @media (max-width: $bigSizeWidth) {
-        right: 0;
-        margin-right: 0px;
-      }
+    .wrapper {
+        padding-left: 470px;
     }
-  }
+
+    .welcome {
+        display: block;
+
+        .screenshot {
+            right: 50%;
+            margin-right: 40px;
+
+            @media (max-width: $bigSizeWidth) {
+                right: 0;
+                margin-right: 0px;
+            }
+        }
+    }
 }

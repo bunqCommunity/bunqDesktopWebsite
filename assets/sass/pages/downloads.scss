@@ -1,74 +1,73 @@
 .section-downloads {
-  background-color: #30da6a;
-  color: white;
+    color: white;
 
-  h3 {
-    margin-bottom: 10px;
-  }
-
-  .no-text-select {
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none;
-    /* Non-prefixed version, currently supported by Chrome and Opera */
-  }
-
-  .fork-button-wrapper {
-    margin-top: 35px;
-
-    .fork-button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 8px;
-      width: 180px;
-      background-color: #ffffff;
-      border: 1px solid rgba(4, 5, 6, 0.38);
-      -webkit-border-radius: 0.25em;
-      -moz-border-radius: 0.25em;
-      border-radius: 0.25em;
-
-      img {
-        width: 18px;
-        height: auto;
-        margin-right: 8px;
-      }
-
-      span {
-        color: black;
-        margin-top: 2px;
-        font-weight: bold;
-      }
-
-      &:hover {
-        background-color: #e9e9e9;
-      }
+    h3 {
+        margin-bottom: 10px;
     }
-  }
 
-  tr {
-    td {
-      padding-right: 2em;
-
-      pre {
-        color: #000000;
-        padding: 8px;
-        border-radius: 4px;
-        display: block;
-        background-color: white;
-      }
-
-      a {
-        color: #ffffff;
-        font-weight: 600;
-      }
-
-      @media (max-width: $bigSizeWidth) {
-        display: block;
-      }
+    .no-text-select {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none;
+        /* Non-prefixed version, currently supported by Chrome and Opera */
     }
-  }
+
+    .fork-button-wrapper {
+        margin-top: 35px;
+
+        .fork-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            width: 180px;
+            background-color: #ffffff;
+            border: 1px solid rgba(4, 5, 6, 0.38);
+            -webkit-border-radius: 0.25em;
+            -moz-border-radius: 0.25em;
+            border-radius: 0.25em;
+
+            img {
+                width: 18px;
+                height: auto;
+                margin-right: 8px;
+            }
+
+            span {
+                color: black;
+                margin-top: 2px;
+                font-weight: bold;
+            }
+
+            &:hover {
+                background-color: #e9e9e9;
+            }
+        }
+    }
+
+    tr {
+        td {
+            padding-right: 2em;
+
+            pre {
+                color: #000000;
+                padding: 8px;
+                border-radius: 4px;
+                display: block;
+                background-color: white;
+            }
+
+            a {
+                color: #ffffff;
+                font-weight: 600;
+            }
+
+            @media (max-width: $bigSizeWidth) {
+                display: block;
+            }
+        }
+    }
 }

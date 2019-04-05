@@ -2,40 +2,35 @@
 layout: default
 ---
 
-<div class="landing-header">
+<div class="section-landing" id="landing">
     <h1>bunqDesktop</h1>
     <h3>The unofficial, free and open source desktop application for the bunq API</h3>
-    <div>
-        <img src="{{ "/assets/images/dashboard-preview.png" | relative_url }}" alt="dashboard preview" />
-    </div>
+    <div><img class="screenshot" src="{{ "/assets/images/dashboard-preview.png" | relative_url }}" alt="dashboard preview" /></div>
 
     <div class="call-to-action">
-        <a href="https://github.com/bunqCommunity/bunqDesktop#download">
-            <button>Download bunqDesktop</button>
+        <a id="all-downloads-link" href="https://github.com/bunqCommunity/bunqDesktop#download">
+            <button id="download-button">All Downloads</button>
         </a>
+
+        <span id="download-button-wrapper"></span>
     </div>
 </div>
 
 <section class="features section section-dashboard" id="welcome">
     <div class="wrapper">
         <h3>Desktop version</h3>
-        <p>
-            bunqDesktop is an unofficial, free and open source desktop application for the bunq api.
-        </p>
+        <p>bunqDesktop is an unofficial, free and open source desktop application for the bunq api.</p>
         <p>
             Our goal is to allow users to manage their bunq account from a desktop device without exposing their API
             keys to a third party.
         </p>
 
         <div class="welcome">
-            <img class="welcome screenshot"
-                 src="{{ "/assets/images/cards-preview.png" | relative_url }}"
-            alt="Cards preview screenshot">
+            <img class="welcome screenshot" src="{{ "/assets/images/cards-preview.png" | relative_url }}" alt="Cards
+            preview screenshot">
         </div>
 
-        <p>
-            All your data stays on your device and is encrypted with your personal password.
-        </p>
+        <p>All your data stays on your device and is encrypted with your personal password.</p>
     </div>
 </section>
 
@@ -43,14 +38,13 @@ layout: default
     <div class="wrapper">
         <h3>Custom features</h3>
         <p>
-            Along with the functionality supplied by the bunq API we also added some useful custom features. If you'd like us
-            to add something make sure to let us know!
+            Along with the functionality supplied by the bunq API we also added some useful custom features. If you'd
+            like us to add something make sure to let us know!
         </p>
 
         <div class="welcome">
-            <img class="welcome screenshot"
-                 src="{{ "/assets/images/stats-preview.png" | relative_url }}"
-            alt="Stats preview screenshot">
+            <img class="welcome screenshot" src="{{ "/assets/images/stats-preview.png" | relative_url }}" alt="Stats
+            preview screenshot">
         </div>
 
         <h3 class="small-header">Features</h3>
@@ -71,14 +65,11 @@ layout: default
             can be found
             <a href="https://github.com/bunqCommunity/bunqDesktop#download" rel="noopener" target="_blank">here</a>.
         </p>
-        <p>
-            To get started with connecting your account simply scan the QR code with the official bunq app.
-        </p>
+        <p>To get started with connecting your account simply scan the QR code with the official bunq app.</p>
 
         <div class="welcome">
-            <img class="welcome screenshot"
-                 src="{{ "/assets/images/login-preview.png" | relative_url }}"
-            alt="Login preview screenshot">
+            <img class="welcome screenshot" src="{{ "/assets/images/login-preview.png" | relative_url }}" alt="Login
+            preview screenshot">
         </div>
 
         <p>
@@ -91,7 +82,6 @@ layout: default
 <section class="section section-downloads" id="downloads">
     <div class="wrapper no-padding">
         <div class="row">
-
             <div class="col-xs-12 col-md-6">
                 <div class="box">
                     <h3>Download</h3>
@@ -99,13 +89,15 @@ layout: default
                         bunqDesktop is supported on most major platforms including Windows, macOS and a few Linux
                         distrubutions.
                     </p>
-                    <p>
-                        There are pre-built installers available for these platforms on Github.
-                    </p>
+                    <p>There are pre-built installers available for these platforms on Github.</p>
 
                     <p class="fork-button-wrapper">
-                        <a href="https://github.com/bunqCommunity/bunqDesktop/releases/latest"
-                           class="fork-button btn btn-5 btn-5a icon-remove" rel="noopener" target="_blank">
+                        <a
+                            href="https://github.com/bunqCommunity/bunqDesktop/releases/latest"
+                            class="fork-button btn btn-5 btn-5a icon-remove"
+                            rel="noopener"
+                            target="_blank"
+                        >
                             <img src="{{ "/assets/images/github.svg" | relative_url }}" /> <span>View downloads</span>
                         </a>
                     </p>
@@ -118,51 +110,56 @@ layout: default
 
                     <table class="welcome-contact-table">
                         <tbody>
-                        <tr>
-                            <td>
-                                <a href="https://caskroom.github.io/" rel="noopener" target="_blank">
-                                    Brew Cask
-                                </a>
-                            </td>
-                            <td>
-                                <pre><span class="no-text-select">$ </span>brew cask install bunqcommunity-bunq</pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://chocolatey.org/packages/bunqdesktop" rel="noopener" target="_blank">
-                                    Chocolatey
-                                </a>
-                            </td>
-                            <td>
-                                <pre><span class="no-text-select">$ </span>choco install bunqdesktop</pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://snapcraft.io/bunqdesktop" rel="noopener" target="_blank">
-                                    Snapcraft
-                                </a>
-                            </td>
-                            <td>
-                                <pre><span class="no-text-select">$ </span>sudo snap install bunqdesktop</pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://aur.archlinux.org/packages/bunq-desktop-bin" rel="noopener" target="_blank">
-                                    AUR package
-                                </a>
-                            </td>
-                            <td>
-                                <pre><span class="no-text-select">$ </span>$AURHELPER -S bunq-desktop-bin</pre>
-                            </td>
-                        </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://caskroom.github.io/" rel="noopener" target="_blank"> Brew Cask </a>
+                                </td>
+                                <td>
+                                    <pre><span class="no-text-select">$ </span>brew cask install bunqcommunity-bunq</pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a
+                                        href="https://chocolatey.org/packages/bunqdesktop"
+                                        rel="noopener"
+                                        target="_blank"
+                                    >
+                                        Chocolatey
+                                    </a>
+                                </td>
+                                <td>
+                                    <pre><span class="no-text-select">$ </span>choco install bunqdesktop</pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://snapcraft.io/bunqdesktop" rel="noopener" target="_blank">
+                                        Snapcraft
+                                    </a>
+                                </td>
+                                <td>
+                                    <pre><span class="no-text-select">$ </span>sudo snap install bunqdesktop</pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a
+                                        href="https://aur.archlinux.org/packages/bunq-desktop-bin"
+                                        rel="noopener"
+                                        target="_blank"
+                                    >
+                                        AUR package
+                                    </a>
+                                </td>
+                                <td>
+                                    <pre><span class="no-text-select">$ </span>$AURHELPER -S bunq-desktop-bin</pre>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
@@ -170,18 +167,21 @@ layout: default
 <section class="section section-contact" id="contact">
     <div class="wrapper no-padding">
         <div class="row">
-
             <div class="col-xs-12 col-md-6">
                 <div class="box">
                     <h3>Open source</h3>
                     <p>
-                        bunqDesktop is open source! Let us know if you have things you'd like to see added, find bugs or if you are
-                        willing to help us out!
+                        bunqDesktop is open source! Let us know if you have things you'd like to see added, find bugs or
+                        if you are willing to help us out!
                     </p>
 
                     <p class="fork-button-wrapper">
-                        <a href="https://github.com/bunqCommunity/bunqDesktop"
-                           class="fork-button btn btn-5 btn-5a icon-remove" rel="noopener" target="_blank">
+                        <a
+                            href="https://github.com/bunqCommunity/bunqDesktop"
+                            class="fork-button btn btn-5 btn-5a icon-remove"
+                            rel="noopener"
+                            target="_blank"
+                        >
                             <img src="{{ "/assets/images/github.svg" | relative_url }}" /> <span> Fork us!</span>
                         </a>
                     </p>
@@ -193,56 +193,66 @@ layout: default
                     <h3>Contact us</h3>
                     <table class="welcome-contact-table">
                         <tbody>
-                        <tr>
-                            <td>GitHub</td>
-                            <td>
-                                <a class="link-effect"
-                                   data-hover="Source"
-                                   href="https://github.com/bunqCommunity/bunqDesktop"
-                                   target="_blank" rel="noopener">
-                                    Source
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Together</td>
-                            <td>
-                                <a class="link-effect"
-                                   data-hover="Discuss"
-                                   href="https://together.bunq.com/topic/bunqdesktop-client"
-                                   target="_blank"
-                                   rel="noopener">
-                                    Discuss
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Telegram</td>
-                            <td>
-                                <a class="link-effect"
-                                   data-hover="bunqCommunity"
-                                   href="https://telegram.me/bunqCommunity" target="_blank"
-                                   rel="noopener">
-                                    bunqCommunity
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <a class="link-effect"
-                                   data-hover="bunqDesktop"
-                                   href="https://telegram.me/bunqDesktop" target="_blank"
-                                   rel="noopener">
-                                    bunqDesktop
-                                </a>
-                            </td>
-                        </tr>
+                            <tr>
+                                <td>GitHub</td>
+                                <td>
+                                    <a
+                                        class="link-effect"
+                                        data-hover="Source"
+                                        href="https://github.com/bunqCommunity/bunqDesktop"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        Source
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Together</td>
+                                <td>
+                                    <a
+                                        class="link-effect"
+                                        data-hover="Discuss"
+                                        href="https://together.bunq.com/topic/bunqdesktop-client"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        Discuss
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Telegram</td>
+                                <td>
+                                    <a
+                                        class="link-effect"
+                                        data-hover="bunqCommunity"
+                                        href="https://telegram.me/bunqCommunity"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        bunqCommunity
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <a
+                                        class="link-effect"
+                                        data-hover="bunqDesktop"
+                                        href="https://telegram.me/bunqDesktop"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        bunqDesktop
+                                    </a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
